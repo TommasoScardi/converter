@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="author" content="Tommaso Scardi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Convertitore JS</title>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <p class="logo">Convertitore JS</p>
+        <p class="gif"><img src="assets/img/home.gif" alt="Home Gif"></p>
+    </nav>
+
+    <div class="main">
+        <!-- Convertitore -->
+        <div class="box">
+            <h1>Convertitore di basi numeriche</h1>
+            <p>Programma per la conversione di un numero dato in input da utente in diverse basi: binaria, ottale, decimale, esadecimale.</p>
+            <br>
+            <form action="" name="Converter" class="conv">
+                <label for="conBin" class="lbl">N° Binario</label><input type="text" name="ConBin" id="conBin" class="text" placeholder="Numero Binario" onkeyup="Convert(document.Converter.ConBin.value, 2)">
+                <label for="conOtt" class="lbl">N° Ottale</label><input type="text" name="ConOtt" id="conOtt" class="text" placeholder="Numero Ottale" onkeyup="Convert(document.Converter.ConOtt.value, 8)">
+                <label for="conDec" class="lbl">N° Decimale</label><input type="text" name="ConDec" id="conDec" class="text" placeholder="Numero Decimale" onkeyup="Convert(document.Converter.ConDec.value, 10)">
+                <label for="conExa" class="lbl">N° Esadecimale</label><input type="text" name="ConExa" id="conExa" class="text" placeholder="Numero Esadecimale" onkeyup="Convert(document.Converter.ConExa.value, 16)">
+                <button type="button" onclick="Clear()">Pulisci Input</button>
+                <p id="error" class="risu">Inserisci Un Numero</p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

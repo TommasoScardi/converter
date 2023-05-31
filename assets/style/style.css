@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    /*background-position: right top;*/
+    background-attachment: fixed;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+
+nav .logo {
+    font-family: arial;
+    color: #222;
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+}
+
+nav .gif {
+    width: 4%;
+    font-size: 24px;
+    line-height: 55px;
+    float: right;
+    padding: 2px 20px;
+}
+
+nav .gif img {
+    width: 100%;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: arial;
+    color: #222;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #f3f3f3;
+}
+
+
+/* nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 150px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f3f3f3;
+} */
+
+
+/* fine navbar */
+
+.main {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.box {
+    text-align: center;
+    background-color: #ffff;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 3vh;
+}
+
+
+/* .box table {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.box table tr {
+    padding: 7px;
+    border: 1px solid black;
+}
+
+.box table tr th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.box table tr td {
+    padding: 10px;
+    border: 1px solid black;
+} */
+
+.text {
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+.text:focus {
+    background: #f3f3f3;
+    border-bottom: 5px solid red;
+    transition: 0.5s;
+}
+
+.text:read-only {
+    background: #c5c5c1;
+    border-bottom: none;
+    transition: none;
+    box-shadow: none;
+}
+
+button {
+    padding: 5px 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: #ff9312;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+button:hover {
+    transition: 0.5s;
+    padding: 5px 70px;
+    background: #f5a720c9;
+    border-radius: 0;
+}
+
+.risu {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#card {
+    transition: 0.5s;
+}
+
+.radio {
+    float: left;
+    display: block;
+    margin-left: 200px;
+    margin-right: -300px;
+}
+
+.selGeom {
+    float: left;
+    display: block;
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+.drawGeomElem {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#sDrawGeom {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#drawGeom {
+    /* width: 300;
+    height: 300; */
+    background: #a9b1b0;
+    margin: 7px 0;
+}
+
+.conv {
+    display: block;
+}
+
+.conv .lbl {
+    float: left;
+    display: inline;
+    margin-left: 18%;
+    margin-right: -35%;
+}
+
+@media(max-width: 991px) {
+    .radio {
+        margin-left: 50px;
+        margin-right: -300px;
+    }
+    .conv .lbl {
+        margin-left: 35%;
+        margin-right: 5%;
+    }
+}
